@@ -10,7 +10,7 @@ log = logging.getLogger('images')
 
 @bp.route(
     '/search/<string:search_term>',
-    methods=['GET'],
+    methods=['POST'],
 )
 def search_images(search_term):
     """
